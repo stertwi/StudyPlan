@@ -1,0 +1,2 @@
+serviceClass: org.gab.plane.client.LoginService
+path: E2B8CD825D2FFAAA5DDF3CBDB4B359F4.gwt.rpc

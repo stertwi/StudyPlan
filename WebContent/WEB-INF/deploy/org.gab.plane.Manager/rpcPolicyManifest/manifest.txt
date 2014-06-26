@@ -1,0 +1,3 @@
+# Module org.gab.plane.Manager
+# RPC service class, partial path of RPC policy file
+org.gab.plane.client.ManagerService, 557AB5FE87EA183E8F3D664F5A0EF9A3.gwt.rpc

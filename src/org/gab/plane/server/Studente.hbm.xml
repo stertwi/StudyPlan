@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 5-feb-2013 16.03.28 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="org.gab.plane.server.Studente" table="STUDENTE">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="sequence">
+            	<param name="sequence">STUDENTE_SEQ</param>
+            </generator>        
+		</id>		
+        <property name="nome" type="java.lang.String">
+            <column name="NOME" />
+        </property>
+        <property name="cognome" type="java.lang.String">
+            <column name="COGNOME" />
+        </property>
+        <property name="pwd" type="java.lang.String">
+            <column name="PWD" />
+        </property>
+        <property name="last_update" type="java.sql.Timestamp">
+            <column name="LAST_UPDATE" />
+        </property>
+        <property name="matricola" type="java.lang.String">
+            <column name="MATRICOLA" />
+        </property>
+        <property name="corsoDiLaurea" type="java.lang.String">
+            <column name="CORSODILAUREA" />
+        </property>
+        <set name="piano" table="PIANO" inverse="false" lazy="true">
+            <key>
+                <column name="STUDENTE" />
+            </key>
+            <one-to-many class="org.gab.plane.server.Piano" />
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 8-mar-2013 17.04.08 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+ <class name="org.gab.plane.server.Sal" table="SAL">
+  <id name="id" type="java.lang.Integer">
+   <column name="ID" precision="22" scale="0"/>
+   <generator class="sequence">
+    <param name="sequence">SAL_SEQ</param>
+   </generator>
+  </id>
+  <many-to-one class="org.gab.plane.server.Studente" fetch="select" name="studente">
+   <column name="STUDENTE" precision="22" scale="0"/>
+  </many-to-one>
+  <many-to-one class="org.gab.plane.server.Piano" fetch="select" name="piano">
+   <column name="PIANO" precision="22" scale="0"/>
+  </many-to-one>
+  <property generated="never" lazy="false" name="pianificazione" type="integer">
+   <column name="PIANIFICAZIONE"/>
+  </property>
+  <!--   <property generated="never" lazy="false" name="pianificazioneXML" type="oracle.xdb.XMLType">
+   <column name="PIANIFICAZIONEXML"/>
+  </property> -->
+  <property generated="never" lazy="false" name="startStudio" type="java.sql.Timestamp">
+   <column length="7" name="START_STUDIO"/>
+  </property>
+  <property generated="never" lazy="false" name="finishStudio" type="java.sql.Timestamp">
+   <column length="7" name="FINISH_STUDIO"/>
+  </property>
+  <property generated="never" lazy="false" name="oreEffettuateTotali" type="double">
+   <column name="ORE_EFFETTUATE"/>
+  </property>
+  <property generated="never" lazy="false" name="lastUpdate" type="java.sql.Timestamp">
+   <column length="7" name="LAST_UPDATE"/>
+  </property>
+ </class>
+</hibernate-mapping>

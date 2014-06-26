@@ -1,0 +1,2 @@
+serviceClass: org.gab.plane.client.RegisterService
+path: ABEE89A021E037E3142C4DBBBD1C6F3C.gwt.rpc

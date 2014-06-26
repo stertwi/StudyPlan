@@ -1,0 +1,2 @@
+serviceClass: org.gab.plane.client.DataService
+path: 587ECA22D65254FCD067FED74D42EF9F.gwt.rpc

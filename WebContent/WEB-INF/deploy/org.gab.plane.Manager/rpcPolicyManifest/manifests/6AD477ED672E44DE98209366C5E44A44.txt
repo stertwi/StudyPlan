@@ -1,0 +1,2 @@
+serviceClass: org.gab.plane.client.ManagerService
+path: 557AB5FE87EA183E8F3D664F5A0EF9A3.gwt.rpc

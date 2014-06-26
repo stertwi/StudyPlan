@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+	<type-mapping>
+		<sql-type jdbc-type="NUMERIC" hibernate-type="big_decimal"
+			precision="22" not-null="true">
+		</sql-type>
+		<sql-type jdbc-type="VARCHAR" hibernate-type="string"
+			length="256" not-null="false">
+		</sql-type>
+		<sql-type jdbc-type="DATE" hibernate-type="date" length="7"
+			not-null="false">
+		</sql-type>
+		<sql-type jdbc-type="NUMERIC" hibernate-type="big_decimal"
+			precision="22" not-null="false">
+		</sql-type>
+		<sql-type jdbc-type="DATE" hibernate-type="date" length="7"
+			not-null="false">
+		</sql-type>
+		<sql-type jdbc-type="VARCHAR" hibernate-type="string"
+			length="1024" not-null="false">
+		</sql-type>
+		<sql-type jdbc-type="FLOAT" hibernate-type="java.lang.Double"
+			precision="126" not-null="false">
+		</sql-type>
+		<sql-type jdbc-type="NUMERIC" hibernate-type="big_decimal"
+			precision="22" not-null="true">
+		</sql-type>
+		<sql-type jdbc-type="VARCHAR" hibernate-type="string"
+			length="256" not-null="false">
+		</sql-type>
+		<sql-type jdbc-type="DATE" hibernate-type="date" length="7"
+			not-null="false">
+		</sql-type>
+		<sql-type jdbc-type="NUMERIC" hibernate-type="big_decimal"
+			precision="22" not-null="false">
+		</sql-type>
+		<sql-type jdbc-type="NUMERIC" hibernate-type="big_decimal"
+			precision="22" not-null="true">
+		</sql-type>
+		<sql-type jdbc-type="VARCHAR" hibernate-type="string"
+			length="256" not-null="false">
+		</sql-type>
+		<sql-type jdbc-type="VARCHAR" hibernate-type="string"
+			length="256" not-null="false">
+		</sql-type>
+		<sql-type jdbc-type="VARCHAR" hibernate-type="string"
+			length="256" not-null="false">
+		</sql-type>
+		<sql-type jdbc-type="VARCHAR" hibernate-type="string"
+			length="256" not-null="false">
+		</sql-type>
+		<sql-type jdbc-type="VARCHAR" hibernate-type="string"
+			length="256" not-null="false">
+		</sql-type>
+		<sql-type jdbc-type="DATE" hibernate-type="date" length="7"
+			not-null="false">
+		</sql-type>
+	</type-mapping>
+	<table-filter match-name="CORSO"></table-filter>
+	<table-filter match-name="PIANO"></table-filter>
+	<table-filter match-name="STUDENTE"></table-filter>
+	<table-filter match-name="SAL"></table-filter>
+
+
+	<table name="CORSO">
+		<column name="ID"></column>
+		<column name="NOME"></column>
+		<column name="LAST_UPDATE"></column>
+		<column name="PIANO"></column>
+		<column name="DATAESAME"></column>
+		<column name="ARGOMENTI"></column>
+		<column name="CFU"></column>
+	</table>
+	<table name="PIANO">
+		<column name="ID"></column>
+		<column name="NOME"></column>
+		<column name="LAST_UPDATE"></column>
+		<column name="STUDENTE"></column>
+	</table>
+	<table name="STUDENTE">
+		<column name="ID"></column>
+		<column name="NOME"></column>
+		<column name="COGNOME"></column>
+		<column name="PWD"></column>
+		<column name="MATRICOLA"></column>
+		<column name="CORSODILAUREA"></column>
+		<column name="LAST_UPDATE"></column>
+	</table>
+	<table name="SAL">
+		<column name="ID"></column>
+		<column name="PIANO"></column>
+		<column name="STUDENTE"></column>
+		<column name="PIANIFICAZIONE"></column>
+		<column name="START_STUDIO"></column>
+		<column name="FINISH_STUDIO"></column>
+		<column name="LAST_UPDATE"></column>
+	</table>
+</hibernate-reverse-engineering>
