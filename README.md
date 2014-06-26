@@ -1,9 +1,11 @@
 StudyPlan
 =========
-
 Create Your Online Study Plan
-=============================
 
+
+
+EN
+==
 Web application for management of university curricula. 
 Daily planning, report of study, details for each course added.
 
@@ -18,8 +20,10 @@ Creating a new user profile
 Creating a new study plan composed of courses, associated to the profile you created.
 For each course you can specify the attributes that affect the daily work plan.
 It's possible to define checkpoints for calculation the SAL, with the refresh of the plan.
-========================================================================================================================
 
+
+IT
+==
 Web application per la gestione di piani di studio universitari. 
 Pianificazione giornaliera, report, dettagli per ogni corso aggiunto
 
