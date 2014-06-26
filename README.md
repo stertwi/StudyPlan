@@ -23,6 +23,7 @@ Creating a new study plan composed of courses, associated to the profile you cre
 For each course you can specify the attributes that affect the daily work plan.
 It's possible to define checkpoints for calculation the SAL, with the refresh of the plan.
 
+Structured project with Oracle database, developed in Java using Hibernate 4 ORM tool, used jboss AS integrated with Google Web Toolkit.
 
 IT
 ==
@@ -43,3 +44,6 @@ Creazione di un nuovo profilo utente.
 Creazione di un nuovo piano di studi composto dai singoli corsi, associabile al profilo creato.
 Per ogni corso sarà possibile specificare gli attributi che incideranno sul piano di lavoro giornaliero,
 con la possibilità di definire dei checkpoint che determineranno il SAL, con il ricalcolo del piano.
+
+
+Progetto strutturato a partire da una base dati Oracle, sviluppato in Java con l’ausilio dell’ORM tool Hibernate 4, funzionale sotto AS jboss integrando la Google Web Toolkit.
